@@ -30,4 +30,4 @@ CMD /root/run.sh
 #  9042 cassandra native transport
 EXPOSE 9160 9042
 
-ADD run.sh /root/run.sh
+ADD run.sh /root/run.sh 
