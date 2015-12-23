@@ -29,7 +29,7 @@ fi
 
 CONFIG_FILE=/etc/cassandra/cassandra.yaml
 
-sed -i -e "s/^\(cluster_name:\).*/\1 ${CASSANDRA_CLUSTER_NAME/" ${CONFIG_FILE}
+sed -i -e "s/cluster_name: 'Test Cluster'/cluster_name: '${CASSANDRA_CLUSTER_NAME}'/" ${CONFIG_FILE}
 sed -i -e "s/^\(listen_address:\).*/\1 ${CASSANDRA_LISTEN_ADDRESS}/" ${CONFIG_FILE}
 sed -i -e "s/^\(rpc_address:\).*/\1 ${CASSANDRA_RPC_ADDRESS}/" ${CONFIG_FILE}
 sed -i -e "s/^\(# \)\(broadcast_rpc_address:\).*/\2 ${CASSANDRA_BROADCAST_RPC_ADDRESS}/" ${CONFIG_FILE}
