@@ -1,7 +1,7 @@
 #
 # Cassandra Dockerfile for Usergrid
 #
-# https://github.com/yep/cassandra
+# https://github.com/yep/usergrid-cassandra
 # 
 
 FROM yep1/usergrid-java
